@@ -8,7 +8,7 @@ function App() {
     Hello world!
   </h1>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
