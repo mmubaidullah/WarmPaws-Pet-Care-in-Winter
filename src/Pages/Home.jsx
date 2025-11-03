@@ -61,7 +61,7 @@ const Home = () => {
       <div className="text-center mt-8 mb-8">
         <Link to="/services">
           <button
-            className="bg-blue-600 cursor-pointer text-white px-6 py-2 rounded hover:bg-blue-700 transition animate__animated"
+            className="bg-amber-500 cursor-pointer text-white px-6 py-2 rounded hover:bg-amber-700 transition animate__animated"
             onMouseEnter={(e) =>
               e.currentTarget.classList.add("animate__bounce")
             }

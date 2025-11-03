@@ -17,7 +17,7 @@ const ServiceAll = () => {
       <h2 className="text-3xl font-bold text-center mb-6">All prducts</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {prducts.map((prduct) => (
-          <prductCard key={prduct.prductId} prduct={prduct} />
+          <PrductCard key={prduct.prductId} prduct={prduct} />
         ))}
       </div>
       <div className="text-center mt-8">
