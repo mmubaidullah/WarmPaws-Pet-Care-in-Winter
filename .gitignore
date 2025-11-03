@@ -7,20 +7,35 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Node modules
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Local environment files
+.env
+.env.local
+.env.development
+.env.production
 
 # Editor directories and files
-.vscode/*
+.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-# Environment Variables
-.env
+
+# System files
+Thumbs.db
+
+# Optional: Netlify cache (if you ever build locally)
+.netlify/
+
+# Optional: Firebase cache and emulators
+.firebase/
