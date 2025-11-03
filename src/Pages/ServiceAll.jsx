@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PrductCard from "./../Components/PrductCard";
 import { Link } from "react-router";
+import MyContainerLayout from "../Components/MyContainerLayout";
 
 const ServiceAll = () => {
   const [prducts, setPrducts] = useState([]);
@@ -12,11 +13,11 @@ const ServiceAll = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold text-center mb-6">All Prducts</h2>
+    <MyContainerLayout className="mx-auto px-4 py-8 overflow-hidden">
+      <h2 className="text-3xl font-bold text-center mb-6">All prducts</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {prducts.map((prduct) => (
-          <PrductCard key={prduct.prductId} prduct={prduct} />
+          <prductCard key={prduct.prductId} prduct={prduct} />
         ))}
       </div>
       <div className="text-center mt-8">
@@ -26,7 +27,7 @@ const ServiceAll = () => {
           </button>
         </Link>
       </div>
-    </div>
+    </MyContainerLayout>
   );
 };
 

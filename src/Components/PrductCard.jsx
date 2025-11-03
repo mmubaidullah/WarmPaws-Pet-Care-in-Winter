@@ -1,8 +1,19 @@
 import React from "react";
-import { Link } from "react-router";
+import { useNavigate } from "react-router";
+import { useAuth } from "../Contexts/useAuth";
 
 const PrductCard = ({ prduct }) => {
   const { prductId, prductName, price, rating, image } = prduct;
+  const { user } = useAuth();
+  const navigate = useNavigate();
+
+  const handleViewDetails = () => {
+    if (user) {
+      navigate(`/prducts/${prductId}`);
+    } else {
+      navigate("/Signin", { state: { from: `/prducts/${prductId}` } });
+    }
+  };
 
   return (
     <div className="border rounded-xl shadow p-4 hover:shadow-lg transition">
@@ -14,11 +25,12 @@ const PrductCard = ({ prduct }) => {
       <h3 className="text-lg font-bold">{prductName}</h3>
       <p className="text-gray-600">Rating: ⭐ {rating}</p>
       <p className="font-semibold">Price: ${price}</p>
-      <Link to={`/prducts/${prductId}`}>
-        <button className="mt-3 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
-          View Details
-        </button>
-      </Link>
+      <button
+        onClick={handleViewDetails}
+        className="mt-3 bg-green-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-green-700"
+      >
+        View Details
+      </button>
     </div>
   );
 };

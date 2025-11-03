@@ -2,16 +2,20 @@ import React, { useEffect, useState } from "react";
 import HeroSwiper from "../Components/HeroSwiper";
 import { Link } from "react-router";
 import PrductCard from "../Components/PrductCard";
+import AboutPage from "../Components/AboutPage";
+import "animate.css";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 
 const Home = () => {
-  const [prducts, setPrducts] = useState([]);
+  const [prducts, setprducts] = useState([]);
 
   useEffect(() => {
     fetch("/prduct.json")
       .then((res) => res.json())
       .then((data) => {
         const topRated = data.sort((a, b) => b.rating - a.rating).slice(0, 6);
-        setPrducts(topRated);
+        setprducts(topRated);
       });
   }, []);
 
@@ -19,24 +23,58 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 overflow-hidden">
       <HeroSwiper />
-      <h2 className="text-3xl font-bold text-center mb-6 mt-8">Popular Prducts</h2>
+      <h2 className="text-3xl font-bold text-center mb-6 mt-8">
+        Popular prducts
+      </h2>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <motion.div
+        className="grid md:grid-cols-3 gap-6"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.2 }}
+      >
         {prducts.map((prduct) => (
-          <PrductCard key={prduct.prductId} prduct={prduct} />
+          <motion.div key={prduct.prductId} variants={cardVariants}>
+            <PrductCard prduct={prduct} />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
-      <div className="text-center mt-8">
+      <div className="text-center mt-8 mb-8">
         <Link to="/services">
-          <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+          <button
+            className="bg-blue-600 cursor-pointer text-white px-6 py-2 rounded hover:bg-blue-700 transition animate__animated"
+            onMouseEnter={(e) =>
+              e.currentTarget.classList.add("animate__bounce")
+            }
+            onAnimationEnd={(e) =>
+              e.currentTarget.classList.remove("animate__bounce")
+            }
+          >
             Show All
           </button>
         </Link>
       </div>
+      <hr className="border-t-2 border-gray-300 my-6" />
+      <AboutPage />
     </div>
   );
 };
