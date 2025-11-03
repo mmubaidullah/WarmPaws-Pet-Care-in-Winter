@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from "react";
-import SkillCard from "./../Components/SkillCard";
+import PrductCard from "./../Components/PrductCard";
 import { Link } from "react-router";
 
 const ServiceAll = () => {
-  const [skills, setSkills] = useState([]);
+  const [prducts, setPrducts] = useState([]);
 
   useEffect(() => {
-    fetch("/skills.json")
+    fetch("/prduct.json")
       .then((res) => res.json())
-      .then((data) => setSkills(data));
+      .then((data) => setPrducts(data));
   }, []);
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold text-center mb-6">All Skills</h2>
+      <h2 className="text-3xl font-bold text-center mb-6">All Prducts</h2>
       <div className="grid md:grid-cols-3 gap-6">
-        {skills.map((skill) => (
-          <SkillCard key={skill.skillId} skill={skill} />
+        {prducts.map((prduct) => (
+          <PrductCard key={prduct.prductId} prduct={prduct} />
         ))}
       </div>
       <div className="text-center mt-8">

@@ -5,7 +5,7 @@ import ErrorPage from "../Pages/ErrorPage";
 import Signin from "../Pages/Signin";
 import Signup from "../Pages/Signup";
 import ServiceAll from "../Pages/ServiceAll";
-import SkillDetails from "../Pages/SkillDetails";
+import PrductDetails from "../Pages/PrductDetails";
 
 
 export const router = createBrowserRouter([
@@ -23,8 +23,8 @@ export const router = createBrowserRouter([
           element: <ServiceAll/>,
         },
         {
-          path:"/skills/:id",
-          element: <SkillDetails/>,
+          path:"/prducts/:id",
+          element: <PrductDetails/>,
         },
         {
           path:"/Signup",

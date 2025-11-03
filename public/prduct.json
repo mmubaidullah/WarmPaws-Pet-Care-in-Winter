@@ -1,7 +1,7 @@
 [
   {
-    "skillId": 1,
-    "skillName": "Winter Coat Fitting for Dogs",
+    "prductId": 1,
+    "prductName": "Winter Coat Fitting for Dogs",
     "providerName": "PawCare Studio",
     "providerEmail": "info@pawcare.com",
     "price": 25,
@@ -12,8 +12,8 @@
     "category": "Clothing"
   },
   {
-    "skillId": 2,
-    "skillName": "Winter Grooming & Paw Treatment",
+    "prductId": 2,
+    "prductName": "Winter Grooming & Paw Treatment",
     "providerName": "CozyPets Grooming",
     "providerEmail": "hello@cozypets.com",
     "price": 30,
@@ -24,8 +24,8 @@
     "category": "Grooming"
   },
   {
-    "skillId": 3,
-    "skillName": "Cat Winter Blanket & Bed Setup",
+    "prductId": 3,
+    "prductName": "Cat Winter Blanket & Bed Setup",
     "providerName": "FurHaven Pet Store",
     "providerEmail": "support@furhaven.com",
     "price": 20,
@@ -36,8 +36,8 @@
     "category": "Bedding"
   },
   {
-    "skillId": 4,
-    "skillName": "Rabbit Warm Shelter Maintenance",
+    "prductId": 4,
+    "prductName": "Rabbit Warm Shelter Maintenance",
     "providerName": "BunnyCare Home",
     "providerEmail": "contact@bunnycare.com",
     "price": 18,
@@ -48,8 +48,8 @@
     "category": "Housing"
   },
   {
-    "skillId": 5,
-    "skillName": "Horse Winter Coat & Hoof Care",
+    "prductId": 5,
+    "prductName": "Horse Winter Coat & Hoof Care",
     "providerName": "StableCompanions",
     "providerEmail": "info@stablecompanions.com",
     "price": 45,
@@ -60,8 +60,8 @@
     "category": "Grooming"
   },
   {
-    "skillId": 6,
-    "skillName": "Bird Winter Cage Heating Setup",
+    "prductId": 6,
+    "prductName": "Bird Winter Cage Heating Setup",
     "providerName": "FeatherCare Experts",
     "providerEmail": "hello@feathercare.com",
     "price": 22,
@@ -72,8 +72,8 @@
     "category": "Heating"
   },
   {
-    "skillId": 7,
-    "skillName": "Cat & Dog Winter Nutrition Plan",
+    "prductId": 7,
+    "prductName": "Cat & Dog Winter Nutrition Plan",
     "providerName": "PetHealth Plus",
     "providerEmail": "diet@pethealthplus.com",
     "price": 15,
@@ -84,8 +84,8 @@
     "category": "Nutrition"
   },
   {
-    "skillId": 8,
-    "skillName": "Winter Checkup for Cows & Goats",
+    "prductId": 8,
+    "prductName": "Winter Checkup for Cows & Goats",
     "providerName": "FarmVet Clinic",
     "providerEmail": "clinic@farmvet.com",
     "price": 35,
@@ -96,8 +96,8 @@
     "category": "Veterinary"
   },
   {
-    "skillId": 9,
-    "skillName": "Pigeon Loft Warmth Setup",
+    "prductId": 9,
+    "prductName": "Pigeon Loft Warmth Setup",
     "providerName": "SkyFeathers Hub",
     "providerEmail": "info@skyfeathers.com",
     "price": 12,
@@ -108,8 +108,8 @@
     "category": "Housing"
   },
   {
-    "skillId": 10,
-    "skillName": "Fish Tank Temperature Control",
+    "prductId": 10,
+    "prductName": "Fish Tank Temperature Control",
     "providerName": "AquaZone",
     "providerEmail": "contact@aquazone.com",
     "price": 28,
@@ -120,8 +120,8 @@
     "category": "Aquatic"
   },
   {
-    "skillId": 11,
-    "skillName": "Sheep Wool Trimming & Care",
+    "prductId": 11,
+    "prductName": "Sheep Wool Trimming & Care",
     "providerName": "WoolyFarm Services",
     "providerEmail": "help@woolyfarm.com",
     "price": 40,
@@ -132,8 +132,8 @@
     "category": "FarmCare"
   },
   {
-    "skillId": 12,
-    "skillName": "Stray Animal Winter Shelter Setup",
+    "prductId": 12,
+    "prductName": "Stray Animal Winter Shelter Setup",
     "providerName": "WarmHearts Foundation",
     "providerEmail": "care@warmhearts.org",
     "price": 10,

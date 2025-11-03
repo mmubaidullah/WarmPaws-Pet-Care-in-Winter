@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import HeroSwiper from "../Components/HeroSwiper";
 import { Link } from "react-router";
-import SkillCard from "../Components/SkillCard";
+import PrductCard from "../Components/PrductCard";
 
 const Home = () => {
-  const [skills, setSkills] = useState([]);
+  const [prducts, setPrducts] = useState([]);
 
   useEffect(() => {
-    fetch("/skills.json")
+    fetch("/prduct.json")
       .then((res) => res.json())
       .then((data) => {
         const topRated = data.sort((a, b) => b.rating - a.rating).slice(0, 6);
-        setSkills(topRated);
+        setPrducts(topRated);
       });
   }, []);
 
@@ -22,11 +22,11 @@ const Home = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <HeroSwiper />
-      <h2 className="text-3xl font-bold text-center mb-6 mt-8">Popular Skills</h2>
+      <h2 className="text-3xl font-bold text-center mb-6 mt-8">Popular Prducts</h2>
 
       <div className="grid md:grid-cols-3 gap-6">
-        {skills.map((skill) => (
-          <SkillCard key={skill.skillId} skill={skill} />
+        {prducts.map((prduct) => (
+          <PrductCard key={prduct.prductId} prduct={prduct} />
         ))}
       </div>
 
