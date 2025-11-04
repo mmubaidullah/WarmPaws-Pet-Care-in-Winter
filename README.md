@@ -57,7 +57,7 @@
 
 ### 🧍 My Profile Page  
 - ইউজারের নাম, ইমেইল, ছবি  
-- “Update Profile” বাটন (Challenge Requirement)  
+- “Update Profile” বাটন  
 
 ### ⚙️ Extra Features  
 - AOS Animation  
@@ -72,7 +72,7 @@
 |-----------|------------------|
 | Framework | React.js |
 | Styling | Tailwind CSS, DaisyUI |
-| Routing | React Router DOM |
+| Routing | React Router |
 | Animation | AOS, Swiper.js, framer-motion, react-spring |
 | Toasts | react-toastify |
 | Authentication | Firebase |
