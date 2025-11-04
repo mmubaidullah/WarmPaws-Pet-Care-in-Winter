@@ -22,19 +22,33 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 w-full bg-base-100 shadow-sm z-50">
       <MyContainerLayout className="flex justify-between items-center py-3 px-3 relative">
         {/* logo */}
-        <Link className="text-2xl md:text-3xl font-bold">WarmPaws Pet Care in Winter</Link>
+        <Link to="/" className="flex items-center gap-2">
+          <img 
+            src="/Favicon.png" 
+            alt="Logo" 
+            className="h-10 w-10 md:h-12 md:w-12 object-contain"
+          />
+          <span className="text-2xl md:text-3xl font-bold text-amber-600">
+            WarmPaws- Pet Care</span>
+        </Link>
         {/* desktop nav */}
         <ul className="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-6">
           <NavLink
             to="/"
-            className={({ isActive }) => (isActive ? "text-purple-500" : "")}
+            className={({ isActive }) => (isActive ? "text-purple-600" : "")}
           >
             Home
+          </NavLink>
+          <NavLink
+            to="/services"
+            className={({ isActive }) => (isActive ? "text-purple-600" : "")}
+          >
+            Services
           </NavLink>
           {user && (
             <NavLink
               to="/profile"
-              className={({ isActive }) => (isActive ? "text-purple-500" : "")}
+              className={({ isActive }) => (isActive ? "text-purple-600" : "")}
             >
               MyProfile
             </NavLink>
@@ -109,7 +123,7 @@ const Navbar = () => {
                       }
                     >
                       Home
-                    </NavLink>
+                    </NavLink>                   
                     <NavLink
                       to="/profile"
                       onClick={() => setMenuOpen(false)}
@@ -128,7 +142,7 @@ const Navbar = () => {
                         handleLogout();
                         setMenuOpen(false);
                       }}
-                      className="text-red-500 text-center border border-red-500 py-2"
+                      className="bg-red-400 text-white text-center rounded border border-red-500 py-2"
                     >
                       Sign Out
                     </button>
@@ -198,6 +212,19 @@ const Navbar = () => {
                       }
                     >
                       Home
+                    </NavLink>
+                    <NavLink
+                      to="/services"
+                      onClick={() => setMenuOpen(false)}
+                      className={({ isActive }) =>
+                        `btn ${
+                          isActive
+                            ? "bg-green-500 text-white border-none"
+                            : "btn-outline"
+                        }`
+                      }
+                    >
+                      Services
                     </NavLink>
                     <NavLink
                       to="/Signin"

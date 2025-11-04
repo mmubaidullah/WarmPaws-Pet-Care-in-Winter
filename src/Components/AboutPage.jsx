@@ -12,8 +12,8 @@ const AboutPage = () => {
       description:
         "Dr. Arman has over 10 years of experience in veterinary medicine and animal wellness. He founded WarmPaws to provide trusted care, grooming, and health support for pets during the winter season when they need extra warmth and attention.",
       social: {
-        facebook: "https://facebook.com/arman.warmpaws",
-        linkedin: "https://linkedin.com/in/drarmanrahman",
+        facebook: "https://facebook.com/",
+        linkedin: "https://linkedin.com/",
       },
     },
     {
@@ -24,8 +24,8 @@ const AboutPage = () => {
       description:
         "Rafi is a certified groomer who ensures every pet is handled gently and stays cozy during winter grooming sessions. From fur trimming to warm baths, he makes pets look and feel their best.",
       social: {
-        facebook: "https://facebook.com/rafiahmedpets",
-        instagram: "https://instagram.com/rafi_grooms",
+        facebook: "https://facebook.com/",
+        instagram: "https://instagram.com",
       },
     },
     {
@@ -36,8 +36,8 @@ const AboutPage = () => {
       description:
         "Anis helps design healthy meal plans and behavior training sessions for pets. His goal is to ensure furry companions stay energetic and happy, even during the coldest months.",
       social: {
-        facebook: "https://facebook.com/anis.chowdhury",
-        instagram: "https://instagram.com/anis_petcare",
+        facebook: "https://facebook.com/",
+        instagram: "https://instagram.com/",
       },
     },
   ];
@@ -239,7 +239,7 @@ const AboutPage = () => {
       </section>
 
       {/* join us */}
-      <section className="rounded py-16 text-center bg-gradient-to-r from-amber-500 to-orange-500 text-white">
+      <section className="rounded py-16 text-center bg-gradient-to-r from-amber-400 to-orange-300 text-white">
         <h2 className="text-3xl font-bold mb-4">Join the WarmPaws Family</h2>
         <p className="max-w-2xl mx-auto mb-6">
           Book your pet’s grooming, boarding, or wellness session this winter
