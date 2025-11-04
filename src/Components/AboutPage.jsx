@@ -120,7 +120,7 @@ const AboutPage = () => {
       {/* team section */}
       <section className="py-15 px-6 md:px-10 bg-[#fffaf3] border mb-6 border-gray-200 rounded">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-          Meet Our Caring Team
+          Meet Our Expert Vets
         </h2>
 
         <motion.div
