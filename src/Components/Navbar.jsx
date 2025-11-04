@@ -29,7 +29,7 @@ const Navbar = () => {
             className="h-10 w-10 md:h-12 md:w-12 object-contain"
           />
           <span className="text-2xl md:text-3xl font-bold text-amber-600">
-            WarmPaws- Pet Care</span>
+            Pet Care</span>
         </Link>
         {/* desktop nav */}
         <ul className="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-6">
